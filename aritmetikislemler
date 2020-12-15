@@ -1,0 +1,76 @@
+package aritmetikislemler;
+
+import java.util.Scanner;
+
+public class islemler {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int islem;
+		
+		System.out.println("İlk Tam Sayıyı Giriniz!");
+		
+		int x = scan.nextInt();
+		
+		
+		System.out.println("İkinci Tam Sayıyı Giriniz!");
+		
+		int y = scan.nextInt();
+		
+		System.out.println("Yapılacak İşlemi Seçiniz!");
+		
+		System.out.println("1: Toplama");
+		System.out.println("2: Çıkarma");
+		System.out.println("3: Çarpma");
+		System.out.println("4: Bölme");
+		
+		islem = scan.nextInt();
+		
+		
+		switch (islem) {
+		
+		case 1:
+			
+			System.out.println("Sonuç:" + (x+y) );
+			break;
+			
+		case 2:
+			
+			System.out.println("Sonuç:" + (x-y) );
+			break;
+				
+		case 3:
+			
+			System.out.println("Sonuç:" + (x*y) );
+			break;
+			
+		case 4:
+			
+			System.out.println("Sonuç:" +  ((double)x/y));
+			break;
+				
+			default:
+				
+				System.out.println("Geçersiz İşlem!");
+				break;
+				
+				
+		}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+
